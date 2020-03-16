@@ -39,6 +39,7 @@ $(function() {
                     $('#contactForm').trigger("reset");
                 },
                 error: function() {
+
 /*                    // Fail message
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
@@ -57,7 +58,10 @@ $(function() {
                         .append("<strong>Sua mensagem foi enviada. </strong>");
                     $('#success > .alert-success')
                         .append('</div>');
-                    
+
+                    //clear all fields
+                    $('#contactForm').trigger("reset");
+
                 },
             })
         },
