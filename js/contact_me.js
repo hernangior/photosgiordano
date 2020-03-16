@@ -17,7 +17,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbxLB75GQSKZtVXUAEvzY4anHyVYsaz_Br3oXiULOQ/exec",
+                url: "https://www.elformo.com/forms/50bf1dfa-5f6f-40dc-9259-ef33d63841dd",
                 type: "POST",
                 data: {
                     name: name,
