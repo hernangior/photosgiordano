@@ -119,12 +119,17 @@
 
 
 <!-- Portfolio Section -->
-<div id="portfolio">
+<!--<div id="portfolio">-->
 
   <div class="container">
     <div class="section-title text-center center">
-      <h2>Portifólio</h2>
-      <hr>
+      <!--<h2>Portifólio</h2>-->
+
+	  <img src="img/preview.jpg" 
+	  class="img-responsive" alt="Photos Giordano" style="  display: block;margin-left: auto;margin-right: auto;width: 50%;">
+
+      
+
     </div>
 
     <div class="categories">
@@ -145,8 +150,12 @@
       <div class="clearfix"></div>
     </div>
 
+	<hr>
+
     <div class="row">
     	<div class="portfolio-items" id="portfolioItems">
+
+			
 
     		<!-- Group: Family -->
 
@@ -909,7 +918,7 @@
     	</div>
     </div>
   </div>
-</div>
+<!--</div>-->
 
 
 <!-- About Section -->
@@ -952,61 +961,94 @@
 
 <!-- Contact Section -->
 <div id="contact" class="text-center">
-  <div class="container">
-    <div class="section-title center" style="padding-bottom: 0px;">
-      <h2>Entre Em Contato</h2>
-      <hr>
-    </div>
-    <div class="col-md-8 col-md-offset-2">  
-      <div class="social" style="margin-top: 40px;">
-        <ul>
-          <li>
-          	<a href="#">
-          		<i class="fa fa-whatsapp">
-          		</i>
-          	</a>
-          </li>
-          <li>
-          	<a href="#">
-          		<i class="fa fa-instagram">
-          		</i>
-          	</a>
-          </li>
-          <li>
-          	<a href="#">
-          		<i class="fa fa-facebook">
-          		</i>
-          	</a>
-          </li>
-          <li>
-          	<a href="#">
-          		<i class="fa fa-linkedin">
-          		</i>
-          	</a>
-          </li>
-          <li>
-          	<a href="#">
-          		<i class="fa fa-twitter">
-          		</i>
-          	</a>
-          </li>
-          <li>
-          	<a href="#">
-          		<i class="fa fa-pinterest">
-          		</i>
-          	</a>
-          </li>
-          <li>
-          	<a href="#">
-          		<i class="fa fa-behance">
-          		</i>
-          	</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+	<div class="container">
+	  
+	  <div class="section-title center" style="padding-bottom: 0px;">
+		<h2>Entre Em Contato</h2>
+		<hr>
+	  </div>
+  
+	  <div class="col-md-8 col-md-offset-2">  
+  
+		  <form 
+			  name="sentMessage" id="contactForm"
+			  class="gform pure-form pure-form-stacked" 
+			  method="POST" 
+			  data-email="photosgiordano@gmail.com">
+	  <div>
+  
+		  <div class="row">
+  
+			<div class="col-md-6">
+			  <div class="form-group">
+				<input type="text" id="name" class="form-control" 
+				name="name" 
+				placeholder="Nome" 
+				required="required">
+				<p class="help-block text-danger"></p>
+			  </div>
+			</div>
+  
+			<div class="col-md-6">
+			  <div class="form-group">
+				<input type="email" id="email" class="form-control"
+				name="email" 
+				placeholder="Email" required="required">
+				<p class="help-block text-danger"></p>
+			  </div>
+			</div>
+  
+		   </div>
+  
+		  <div class="form-group">
+			<textarea name="message" id="message" class="form-control" 
+			name="message" rows="4" placeholder="Mensagem" required></textarea>
+			<p class="help-block text-danger"></p>
+		  </div>
+  
+		  <div id="success"></div>
+  
+		  <button type="submit" class="btn btn-default btn-lg">
+			  Enviar Mensagem
+		  </button>
+  
+	  </div>
+  
+	</form>
+  
+		<div class="social" style="margin-top: 40px;">
+		  <ul>
+			<li style="margin-bottom: 40px;">
+				<a href="https://api.whatsapp.com/send?phone=5586999545665&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20pacotes%20de%20fotos">
+					<i class="fa fa-whatsapp" style="font-size: 40px;">
+					</i>
+					<br>
+					<!--<b>(86) 9 9954 5665</b>-->
+				</a>
+			</li>
+			<li style="margin-bottom: 40px;">
+				<a href="https://www.instagram.com/photosgiordano/">
+					<i class="fa fa-instagram" style="font-size: 40px;">
+					</i>
+					<br>
+					<!--<b>@PhotosGiordano</b>-->
+				</a>
+			</li>
+			<li style="margin-bottom: 40px;">
+				<a href="https://www.facebook.com/hernandez.giordano">
+					<i class="fa fa-facebook" style="font-size: 40px;">
+					</i>
+					<br>
+					<!--<b>Photos Giordano</b>-->
+				</a>
+			</li>
+		  </ul>
+		</div>
+  
+	  </div>
+	</div>
   </div>
-</div>
+
 <div id="footer">
   <div class="container text-center">
     <div class="fnav">
