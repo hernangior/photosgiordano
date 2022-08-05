@@ -6,6 +6,7 @@ $(function() {
             // additional error messages or events
         },
         submitSuccess: function($form, event) {
+
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
             var name = $("input#name").val();
@@ -16,13 +17,14 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLScSb0xiEF75ZZwf9WGCbX6OSu6uhuM6LqP-iYrmbMaHjate-Q/formResponse",
                 type: "POST",
                 data: {
-                    name: name,
-                    email: email,
-                    message: message
+                    "entry.52904792": name,
+                    "entry.1665733173": email,
+                    "entry.1129926948": message
                 },
                 cache: false,
                 success: function() {
@@ -31,7 +33,7 @@ $(function() {
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
-                        .append("<strong>Your message has been sent. </strong>");
+                        .append("<strong>Sua mensagem foi enviada. </strong>");
                     $('#success > .alert-success')
                         .append('</div>');
 
@@ -43,13 +45,15 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
+                    $('#success > .alert-danger').append("<strong>Desculpe " + firstName + ", parece que estou com problemas. Por favor tente novamente mais tarde!");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
             })
+
         },
+
         filter: function() {
             return $(this).is(":visible");
         },
