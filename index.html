@@ -69,6 +69,79 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
 
+      <style>
+         
+         .shadow-sm {
+         box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+         }
+
+         .card {
+         --bs-card-spacer-y: 1rem;
+         --bs-card-spacer-x: 1rem;
+         --bs-card-title-spacer-y: 0.5rem;
+         --bs-card-border-width: 1px;
+         --bs-card-border-color: var(--bs-border-color-translucent);
+         --bs-card-border-radius: 0.375rem;
+         --bs-card-box-shadow: ;
+         --bs-card-inner-border-radius: calc(0.375rem - 1px);
+         --bs-card-cap-padding-y: 0.5rem;
+         --bs-card-cap-padding-x: 1rem;
+         --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+         --bs-card-cap-color: ;
+         --bs-card-height: ;
+         --bs-card-color: ;
+         --bs-card-bg: #fff;
+         --bs-card-img-overlay-padding: 1rem;
+         --bs-card-group-margin: 0.75rem;
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         min-width: 0;
+         height: var(--bs-card-height);
+         word-wrap: break-word;
+         background-color: var(--bs-card-bg);
+         background-clip: border-box;
+         border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+         border-radius: var(--bs-card-border-radius);
+         }
+
+         .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+         }
+
+         .card-img, .card-img-top {
+            border-top-left-radius: var(--bs-card-inner-border-radius);
+            border-top-right-radius: var(--bs-card-inner-border-radius);
+         }
+
+         .card-img, .card-img-bottom, .card-img-top {
+            width: 100%;
+         }
+
+         img, svg {
+            vertical-align: middle;
+         }
+
+         .card-body {
+            flex: 1 1 auto;
+            padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+            color: var(--bs-card-color);
+         }
+
+         .text-muted {
+         --bs-text-opacity: 1;
+         color: #6c757d !important;
+         }
+         .small, small {
+         font-size: .875em;
+         }
+
+      </style>
+
    </head>
    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
@@ -1007,14 +1080,95 @@
 
       </div>
 
+
+
+
+
+
+      <div class="album py-5 bg-light">
+         <div class="container">
+
+            <div class="section-title text-center center">
+               <h2>Blog</h2>
+               <hr>
+            </div>
+     
+           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+             <div class="col-md-4 col-sm-6">
+               <div class="card shadow-sm">
+                 <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" 
+                 aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                 <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+     
+                 <div class="card-body">
+                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                   <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                       <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                     </div>
+                     <small class="text-muted">9 mins</small>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+             <div class="col-md-4 col-sm-6">
+               <div class="card shadow-sm">
+                 <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" 
+                 aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                 <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+     
+                 <div class="card-body">
+                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                   <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                       <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                     </div>
+                     <small class="text-muted">9 mins</small>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+             <div class="col-md-4 col-sm-6">
+               <div class="card shadow-sm">
+                 <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" 
+                 aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                 <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                 <div class="card-body">
+                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                   <div class="d-flex justify-content-between align-items-center">
+                     <div class="btn-group">
+                       <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                     </div>
+                     <small class="text-muted">9 mins</small>
+                   </div>
+                 </div>
+               </div>
+             </div>
+     
+           </div>
+
+           <a href="#blog" class="btn btn-default btn-lg page-scroll" style="width: 100%;">Leia Mais...</a> 
+
+         </div>
+       </div>
+
+
+
+
+
       <!-- About Section -->
 
          <div id="about">
          	<div class="container">
-         	  <div class="section-title text-center center">
-         		<h2>Sobre Mim</h2>
-         		<hr>
-         	  </div>
+         	  
+               <div class="section-title text-center center">
+         		   <h2>Sobre Mim</h2>
+         		   <hr>
+         	   </div>
+
          	  <div class="row">
          		<div class="col-md-12 text-center">
            
@@ -1023,20 +1177,25 @@
          		</div>
          		<div class="col-md-8 col-md-offset-2">
          		  <div class="about-text">
-         			<p style="text-align:justify;">“A fotografia, antes de tudo é um testemunho. Quando se aponta a câmara para algum objeto ou sujeito, 
-         				constrói-se um significado, faz-se uma escolha, seleciona-se um tema e conta-se uma história, cabe a nós, 
-         				espectadores, o imenso desafio de lê-las.”
-         				<br>
-         				<b>Autor Desconhecido</b>
+
+                  <p style="text-align:justify;">“A fotografia, antes de tudo é um testemunho. Quando se aponta a câmara para algum objeto ou sujeito, 
+                     constrói-se um significado, faz-se uma escolha, seleciona-se um tema e conta-se uma história, cabe a nós, 
+                     espectadores, o imenso desafio de lê-las.”
+                     <br>
+                     <b>Autor Desconhecido</b>
                      <br>
                      <br>
-         			 Meu nome é Hernandez Giordano e nasci em Fortaleza em 28 de Outubro de 1992.
-         				Formei-me em Sistemas Informação pela Facid Wyden em 2016 e trabalho desde 2011 como 
-         				Desenvolvedor de Software. 
-         				A fotografia, entretanto, sempre esteve em minha vida, uma paixão que herdei de meu pai,
-         				e cresceu comigo, como um hobby levado muito a sério que um dia se tornou profissão. 
-         			  </p>
-         			<a href="#portfolio" class="btn btn-default btn-lg page-scroll">Meu Portifólio</a> </div>
+                     Meu nome é Hernandez Giordano e nasci em Fortaleza em 28 de Outubro de 1992.
+                     Formei-me em Sistemas Informação pela Facid Wyden em 2016 e trabalho desde 2011 como 
+                     Desenvolvedor de Software. 
+                     A fotografia, entretanto, sempre esteve em minha vida, uma paixão que herdei de meu pai,
+                     e cresceu comigo, como um hobby levado muito a sério que um dia se tornou profissão. 
+                  </p>
+
+                  <a href="#portfolio" class="btn btn-default btn-lg page-scroll">Meu Portifólio</a> 
+
+                  </div>
+
          		</div>
          	  </div>
          	</div>
@@ -1125,6 +1284,7 @@
             </div>
          </div>
       </div>
+
       <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
       <script type="text/javascript" src="js/bootstrap.js"></script> 
       <script type="text/javascript" src="js/SmoothScroll.js"></script> 
@@ -1133,5 +1293,6 @@
       <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
       <script type="text/javascript" src="js/contact_me.js"></script> 
       <script type="text/javascript" src="js/main.js"></script>
+
    </body>
 </html>
