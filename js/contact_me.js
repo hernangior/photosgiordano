@@ -36,6 +36,7 @@ $(function() {
                 //dataType: 'json',
                 //crossDomain: true,
                 //headers: { 'Access-Control-Allow-Origin': "*"},
+
                 data: {
                     "entry.52904792": name,
                     "entry.1665733173": email,
@@ -47,6 +48,7 @@ $(function() {
                     //pageHistory: 0,
                     //fbzx: '7385271245913055562'
                 },
+
                 cache: false,
                 url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLScSb0xiEF75ZZwf9WGCbX6OSu6uhuM6LqP-iYrmbMaHjate-Q/formResponse",
                 success: function() {
@@ -62,16 +64,18 @@ $(function() {
                     $('#contactForm').trigger("reset");
                 },
                 error: function(error) {
-
+                    
                     if ((!error.responseText) && (!error.status)){
                         showSuccessMsg()
                     }else{
+
                         // Fail message
                         $('#success').html("<div class='alert alert-danger'>");
                         $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
                         $('#success > .alert-danger').append("<strong>Desculpe " + firstName + ", parece que estou com problemas. Por favor tente novamente mais tarde!");
                         $('#success > .alert-danger').append('</div>');
+                        
                     }
 
                     //clear all fields
