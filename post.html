@@ -144,7 +144,7 @@
          <div class="container">
             
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-               <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+               <a href="blog.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                   <svg class="bi me-2" width="40" height="32">
                      <use xlink:href="#bootstrap"/>
                   </svg>
@@ -158,212 +158,143 @@
                </ul>
             </header>
 
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 0px;">
-               <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-               </div>
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#777"/>
-                     </svg>
-                     <div class="container">
-                        <div class="carousel-caption text-start">
-                           <h1>Example headline.</h1>
-                           <p>Some representative placeholder content for the first slide of the carousel.</p>
-                           <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <div class="row">
+
+               <!-- Blog Entries Column -->
+               <div class="col-lg-8">
+
+                  <!-- Title -->
+                  <h1 class="mt-4">Maasai Serengeti</h1>
+
+                  <!-- Author -->
+                  <p class="lead">
+                     by
+                     <a href="#">Webublogoverflow</a>
+                  </p>
+                  <hr>
+
+                  <!-- Date/Time -->
+                  <p>Posted on January 1, 2018 at 12:00 PM</p>
+                  <hr>
+
+                  <!-- Preview Image -->
+                  <img class="card-img-top" src="https://picsum.photos/300/300" alt="Card image cap">
+                  <hr>
+
+                  <!-- Post Content -->
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
+                  <blockquote class="blockquote">
+                     <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                     <footer class="blockquote-footer">Someone famous in
+                        <cite title="Source Title">Source Title</cite>
+                     </footer>
+                  </blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+                  <hr>
+
+                  <!-- Comments Form -->
+                  <div class="card my-4">
+                     <h5 class="card-header">Leave a Comment:</h5>
+                     <div class="card-body">
+                        <form>
+                           <div class="form-group">
+                              <textarea class="form-control" rows="3"></textarea>
+                           </div>
+                           <br>
+                           <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                     </div>
+                  </div>
+
+                  <!-- Single Comment -->
+                  <div class="media mb-4">
+                     <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                     <div class="media-body">
+                        <h5 class="mt-0">Commenter Name</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                     </div>
+                  </div>
+
+                  <!-- Comment with nested comments -->
+                  <div class="media mb-4">
+                     <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                     <div class="media-body">
+                        <h5 class="mt-0">Commenter Name</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        <div class="media mt-4">
+                           <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                           <div class="media-body">
+                              <h5 class="mt-0">Commenter Name</h5>
+                              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                           </div>
+                        </div>
+                        <div class="media mt-4">
+                           <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                           <div class="media-body">
+                              <h5 class="mt-0">Commenter Name</h5>
+                              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                           </div>
                         </div>
                      </div>
                   </div>
-                  <div class="carousel-item">
-                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#777"/>
-                     </svg>
-                     <div class="container">
-                        <div class="carousel-caption text-start">
-                           <h1>Example headline.</h1>
-                           <p>Some representative placeholder content for the first slide of the carousel.</p>
-                           <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+
+               </div>
+
+
+
+               <!-- Sidebar Widgets Column -->
+               <div class="col-md-4">
+
+               <!-- Categories Widget -->
+               <div class="card my-3">
+                  <h5 class="card-header">Categories</h5>
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <ul class="list-unstyled mb-0">
+                              <li>
+                                 <a href="#">Simba</a>
+                              </li>
+                              <li>
+                                 <a href="#">Nyati</a>
+                              </li>
+                              <li>
+                                 <a href="#">Faru</a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="col-lg-6">
+                           <ul class="list-unstyled mb-0">
+                              <li>
+                                 <a href="#">Kiboko</a>
+                              </li>
+                              <li>
+                                 <a href="#">Fisi</a>
+                              </li>
+                              <li>
+                                 <a href="#">Pundamlia</a>
+                              </li>
+                           </ul>
                         </div>
                      </div>
                   </div>
-                  <div class="carousel-item">
-                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#777"/>
-                     </svg>
-                     <div class="container">
-                        <div class="carousel-caption text-start">
-                           <h1>Example headline.</h1>
-                           <p>Some representative placeholder content for the first slide of the carousel.</p>
-                           <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                        </div>
-                     </div>
+               </div>
+
+               <!-- Side Widget -->
+               <div class="card my-4">
+                  <h5 class="card-header">maelezo</h5>
+                  <div class="card-body">
+                     You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
                   </div>
                </div>
-               <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Previous</span>
-               </button>
-               <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Next</span>
-               </button>
-            </div>
 
-            <div class="col-lg-12 col-md-12 card shadow-sm" style="margin-top:15px;"> 
-               <div class="row">
-                  <div class="col-lg-2 col-md-2" style="margin:15px;"> 
-                     <img src="https://picsum.photos/id/240/300/300" 
-                     style="height: 100%;"
-                     class="img-fluid img-thumbnail" alt="...">
-                  </div>
-                  <div class="col-lg-9 col-md-9" style="margin-top:15px;margin-bottom: 15px;">
-                     <h5>Título</h5>
-                     <p>t is a long established fact that a reader will be distracted by the readable 
-                        content of a page when looking at its layout. The point of using Lorem Ipsum 
-                        is that it has a more-or-less normal distribution of letters, as opposed to 
-                        using 'Content here, content here', making it look like readable English. 
-                        Many desktop publishing packages and web page editors now use Lorem Ipsum
-                         as their default model text, and a search for 'lorem ipsum' will uncover 
-                         many web sites still in their infancy. Various versions have evolved over 
-                         the years, sometimes by accident, sometimes on purpose (injected 
-                         humour and the like).</p>
-                         <button type="button" class="btn btn-primary btn-lg" onclick="location.href='post.html'" >Leia Mais</button>
-                  </div>
+
+
                </div>
-            </div>
 
-            <hr class="featurette-divider" style="margin: 15px">
-
-            <div class="col-lg-12 col-md-12 card shadow-sm" style="margin-top:15px;"> 
-               <div class="row">
-                  <div class="col-lg-2 col-md-2" style="margin:15px;"> 
-                     <img src="https://picsum.photos/id/250/300/300" 
-                     style="height: 100%;"
-                     class="img-fluid img-thumbnail" alt="...">
-                  </div>
-                  <div class="col-lg-9 col-md-9" style="margin-top:15px;margin-bottom: 15px;">
-                     <h5>Título</h5>
-                     <p>t is a long established fact that a reader will be distracted by the readable 
-                        content of a page when looking at its layout. The point of using Lorem Ipsum 
-                        is that it has a more-or-less normal distribution of letters, as opposed to 
-                        using 'Content here, content here', making it look like readable English. 
-                        Many desktop publishing packages and web page editors now use Lorem Ipsum
-                         as their default model text, and a search for 'lorem ipsum' will uncover 
-                         many web sites still in their infancy. Various versions have evolved over 
-                         the years, sometimes by accident, sometimes on purpose (injected 
-                         humour and the like).</p>
-                         <button type="button" class="btn btn-primary btn-lg" onclick="location.href='post.html'">Leia Mais</button>
-                  </div>
-               </div>
-            </div>
-
-            <hr class="featurette-divider" style="margin: 15px">
-
-            <div class="col-lg-12 col-md-12 card shadow-sm" style="margin-top:15px;"> 
-               <div class="row">
-                  <div class="col-lg-2 col-md-2" style="margin:15px;"> 
-                     <img src="https://picsum.photos/id/260/300/300" 
-                     style="height: 100%;"
-                     class="img-fluid img-thumbnail" alt="...">
-                  </div>
-                  <div class="col-lg-9 col-md-9" style="margin-top:15px;margin-bottom: 15px;">
-                     <h5>Título</h5>
-                     <p>t is a long established fact that a reader will be distracted by the readable 
-                        content of a page when looking at its layout. The point of using Lorem Ipsum 
-                        is that it has a more-or-less normal distribution of letters, as opposed to 
-                        using 'Content here, content here', making it look like readable English. 
-                        Many desktop publishing packages and web page editors now use Lorem Ipsum
-                         as their default model text, and a search for 'lorem ipsum' will uncover 
-                         many web sites still in their infancy. Various versions have evolved over 
-                         the years, sometimes by accident, sometimes on purpose (injected 
-                         humour and the like).</p>
-                         <button type="button" class="btn btn-primary btn-lg" onclick="location.href='post.html'">Leia Mais</button>
-                  </div>
-               </div>
-            </div>
-
-            <hr class="featurette-divider" style="margin: 15px">
-
-            <div class="col-lg-12 col-md-12 card shadow-sm" style="margin-top:15px;"> 
-               <div class="row">
-                  <div class="col-lg-2 col-md-2" style="margin:15px;"> 
-                     <img src="https://picsum.photos/id/270/300/300" 
-                     style="height: 100%;"
-                     class="img-fluid img-thumbnail" alt="...">
-                  </div>
-                  <div class="col-lg-9 col-md-9" style="margin-top:15px;margin-bottom: 15px;">
-                     <h5>Título</h5>
-                     <p>t is a long established fact that a reader will be distracted by the readable 
-                        content of a page when looking at its layout. The point of using Lorem Ipsum 
-                        is that it has a more-or-less normal distribution of letters, as opposed to 
-                        using 'Content here, content here', making it look like readable English. 
-                        Many desktop publishing packages and web page editors now use Lorem Ipsum
-                         as their default model text, and a search for 'lorem ipsum' will uncover 
-                         many web sites still in their infancy. Various versions have evolved over 
-                         the years, sometimes by accident, sometimes on purpose (injected 
-                         humour and the like).</p>
-                         <button type="button" class="btn btn-primary btn-lg" onclick="location.href='post.html'">Leia Mais</button>
-                  </div>
-               </div>
-            </div>
-
-            <hr class="featurette-divider" style="margin: 15px">
-
-            <div class="col-lg-12 col-md-12 card shadow-sm" style="margin-top:15px;"> 
-               <div class="row">
-                  <div class="col-lg-2 col-md-2" style="margin:15px;"> 
-                     <img src="https://picsum.photos/id/280/300/300" 
-                     style="height: 100%;"
-                     class="img-fluid img-thumbnail" alt="...">
-                  </div>
-                  <div class="col-lg-9 col-md-9" style="margin-top:15px;margin-bottom: 15px;">
-                     <h5>Título</h5>
-                     <p>t is a long established fact that a reader will be distracted by the readable 
-                        content of a page when looking at its layout. The point of using Lorem Ipsum 
-                        is that it has a more-or-less normal distribution of letters, as opposed to 
-                        using 'Content here, content here', making it look like readable English. 
-                        Many desktop publishing packages and web page editors now use Lorem Ipsum
-                         as their default model text, and a search for 'lorem ipsum' will uncover 
-                         many web sites still in their infancy. Various versions have evolved over 
-                         the years, sometimes by accident, sometimes on purpose (injected 
-                         humour and the like).</p>
-                         <button type="button" class="btn btn-primary btn-lg" onclick="location.href='post.html'">Leia Mais</button>
-                  </div>
-               </div>
-            </div>
-
-            <hr class="featurette-divider" style="margin: 15px">
-
-            <div class="col-lg-12 col-md-12 card shadow-sm" style="margin-top:15px;"> 
-               <div class="row">
-                  <div class="col-lg-2 col-md-2" style="margin:15px;"> 
-                     <img src="https://picsum.photos/id/290/300/300" 
-                     style="height: 100%;"
-                     class="img-fluid img-thumbnail" alt="...">
-                  </div>
-                  <div class="col-lg-9 col-md-9" style="margin-top:15px;margin-bottom: 15px;">
-                     <h5>Título</h5>
-                     <p>t is a long established fact that a reader will be distracted by the readable 
-                        content of a page when looking at its layout. The point of using Lorem Ipsum 
-                        is that it has a more-or-less normal distribution of letters, as opposed to 
-                        using 'Content here, content here', making it look like readable English. 
-                        Many desktop publishing packages and web page editors now use Lorem Ipsum
-                         as their default model text, and a search for 'lorem ipsum' will uncover 
-                         many web sites still in their infancy. Various versions have evolved over 
-                         the years, sometimes by accident, sometimes on purpose (injected 
-                         humour and the like).</p>
-                         <button type="button" class="btn btn-primary btn-lg" onclick="location.href='post.html'">Leia Mais</button>
-                  </div>
-               </div>
-            </div>
-
-            
-
-            <div class="row" style="margin-top: 20px;">
-               <button type="button" class="btn btn-primary btn-lg btn-block">Leia Mais Artigos</button>
             </div>
 
          </div>
