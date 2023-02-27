@@ -157,7 +157,7 @@ hr {
 	-o-background-size: cover;
 }
 .section-title.center {
-	padding: 10px 0 40px 0;
+	/*padding: 10px 0 40px 0;*/
 }
 .intro h1 {
 	font-size: 60px;
@@ -197,7 +197,7 @@ header .intro-text {
 }
 /* Portfolio Section */
 #portfolio {
-	padding: 120px 0;
+	/*padding: 120px 0;*/
 	background: #f6f6f6;
 }
 .categories {
