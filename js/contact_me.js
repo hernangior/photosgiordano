@@ -33,6 +33,7 @@ $(function() {
 
             $.ajax({
                 type: "POST",
+                
                 //dataType: 'json',
                 //crossDomain: true,
                 //headers: { 'Access-Control-Allow-Origin': "*"},
